@@ -1,0 +1,528 @@
+/* RESET BASIQUE */
+.body{background-image: url(./effet/pinterest1.jpg
+  );}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+.form button{
+  align-self: flex-end;
+}
+header {
+    padding: 0px;
+    margin:0px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #1e1e2f;
+    color: white;
+    position: sticky;
+    top: 0;
+    
+}
+
+.text{
+  color: yellow;
+  display: flex;
+  justify-content: center;
+  
+}
+.dispo{
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+.cont{
+  background-color: #000;
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+/*couleur du header*/
+header nav ul li a:hover {
+    color: #ff6b6b;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 50px;
+    background: linear-gradient(to right, #ff6b6b, #f111);
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-text .btn {
+    padding: 12px 30px;
+    background-color: #1e1e2f;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.hero-text .btn:hover {
+    background-color: #ff6b6b;
+}
+
+.hero-image img {
+    width: 500px;
+    border-radius: 15px;
+}
+
+
+.stories {
+    padding: 50px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.stories h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.story-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.story-container video {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e2f;
+    color: white;
+}
+
+  /* Conteneur principal du carrousel */
+        .carousel-container {
+            width: 80%;
+            max-width: 800px; /* Largeur maximale */
+            height: 400px;    /* Hauteur fixe pour uniformité */
+            position: relative;
+            overflow: hidden; /* Cache les images qui débordent */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            justify-content: center;
+            display: flex;
+            
+        }
+        .carouselContainer{
+          justify-content: right;
+          display: flex;
+        }
+
+        /* La piste qui contient toutes les images */
+        .carousel-track {
+            display: flex;
+            height: 100%;
+            transition: transform 0.5s ease-in-out; /* Animation fluide */
+        }
+
+        /* Chaque diapositive individuelle */
+        .carousel-slide {
+            min-width: 100%;
+            height: 100%;
+        }
+
+        /* Style des images */
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Remplit le cadre sans déformer l'image */
+            display: block;
+        }
+
+        /* Boutons de navigation */
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 50px;
+            z-index: 10;
+            transition: background 0.3s;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+    margin-bottom: 20px;
+        }
+
+        .carousel-btn:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .prev-btn {
+            left: 20px;
+        }
+
+        .next-btn {
+            right: 20px;
+        }
+ .AAA{
+   font-size:1,8rem;
+   color:black;
+   text-align: center;
+ }
+ /*controle de la bande d' annonces*/
+
+
+          /****-----PARTIE BODY----***/
+
+ .next{
+  justify-content: center;
+  display: flex;
+ }
+ /*controle du des coleurs et style d'écriture*/
+  body {
+      background: #fff;
+      color: #000;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth; /* Défilement fluide pour les ancres */
+      line-height: 1.6;
+    }
+
+    /*controle de l' agencement des images*/
+    .galerie{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.galerie img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.ligne{
+  display: flex;
+  gap: 15px;
+}
+
+  .droit{
+  height: 100px;
+  width: 100px;
+}
+.imgpropos{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.ligne{
+  display: flex;
+  gap: 15px;
+}
+.ligne:nth-child(1) .gauche{
+  flex: 2;
+}
+.ligne:nth-child(1) .droite{
+  flex: 1;
+}
+.galerie div:nth-child(2) .gauche{
+  flex: 1;
+}
+.galerie div:nth-child(2) .droite{
+  flex: 2;
+}
+.ligne:nth-child(3) .gauche,.ligne:nth-child(3) .droite{
+  flex: 1;
+}
+/*cotrole des images des autres evenement*/
+.page{
+  display: flex;
+  justify-content:center;
+   width:100%;
+   height:100%;
+}
+.nage{
+  display: flex;
+  justify-content: center;
+}
+
+
+  /** -------FIN DE PAGE------ **/
+
+
+  .container {
+        width: 95%; /* Marge réduite sur mobile */
+      }
+       /* ===== FOOTER ===== */
+    .footer {
+      background: #111;
+      padding: 60px 0 30px; /* Padding augmenté */
+      border-top: 1px solid #333;
+    }
+    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px; /* Espacement augmenté */
+      margin-bottom: 40px;
+    }
+    
+    .footer-section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px; /* Espacement augmenté */
+    }
+    
+    .footer-section h3 {
+      color: #fff;
+      list-style: none;
+    }
+    
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px; /* Espacement augmenté */
+    }
+    
+    .footer-links a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+       .footer-grid {
+        grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+      }
+        .footer-grid {
+        grid-template-columns: repeat(2, 1fr); /* Passe à 2 colonnes */
+      }
+
+      .copyright {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid #333;
+      color: #666;
+    }
+     /** -------FIN DE PAGE------ **/
+
+
+  .container {
+        padding: 100px;
+        margin: 15px 15px 15px 15px;
+        width: 95%; /* Marge réduite sur mobile */
+      }
+      
+     /***---------SECTION DES PROGRAMES--------***/
+/*Controle du tableau*/
+.Programmes {
+   text-align: center;
+   color: black;
+}
+ table{
+  
+    padding: 20px;
+    
+    border-collapse: collapse;
+    border: 1px solid red ; 
+    border-radius: 15px;
+
+}
+th,td{
+    border: 1px solid black; 
+    padding: 10px;
+
+}
+th{
+    background-color:whitesmoke;
+}
+.strong
+{   
+       width: 100px;
+   height: 100px;
+    text-emphasis: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    justify-content: space-between;
+}
+
+.three {
+   justify-content: space-between;
+    background-color: white;
+    border-radius: 10px; 
+    gap: 1rem;
+    margin: 5px;
+    margin-top: 6px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,2);
+}
+
+   /*-----Section pour la page de connexion---------*/
+
+ .contact {
+      padding: 100px 0;
+      background: #000;
+    }
+    
+    .contact h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #ff6b6b;
+      text-align: center;
+    }
+    
+    
+    .contact .photo {
+      width: 100%;
+      height: 350px; /* Hauteur augmentée */
+      background: #333;
+      border-radius: 10px;
+      border: 2px solid #333;
+    }
+    
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px; /* Espacement augmenté entre les champs */
+    }
+    
+    input, textarea {
+      padding: 15px; /* Padding augmenté pour plus de confort */
+      background: #111;
+      border: 1px solid #444;
+      color: #fff;
+      border-radius: 8px; /* Coins plus arrondis */
+      transition: all 0.3s ease;
+      font-size: 16px; /* Taille de police augmentée */
+    }
+    
+    input:focus, textarea:focus {
+      outline: none;
+      border-color:rgb(0, 128, 90);
+      background: #1a1a1a;
+      box-shadow: 0 0 10px rgba(245, 166, 35, 0.2); /* Ombre de focus */
+    }
+
+              /* ---------section tickets--------- */
+      
+ .body1{
+  background-image: url(./effet/pinterest1.jpg);
+ 
+ }
+
+button {
+      background: #ff6b6b;
+      border: none;
+      padding: 15px 30px; /* Padding augmenté */
+      color: #000;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      font-size: 16px;
+      
+    }
+button:hover {
+      background: #ff6b6b ;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(245, 166, 35, 0.3);
+    }
+ .lol{
+  justify-items: center;
+    font-weight: bold;
+      font-size: 20px;
+ list-style: none;
+      gap: 25px;
+   }
+
+
+ .lol a {
+  padding: auto;
+      color: black;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+.lol a:hover {
+    color: #ca2727;
+}
+
+.poto{
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: gray;
+      text-align: center;
+    }
+.body{
+  background-color: wheat ;
+  color: #fff
+}
+ summary {
+            padding: 10px 15px;
+            cursor: pointer;
+            font-weight: bold;
+           
+            user-select: none; /* Empêche la sélection du texte en cliquant rapidement */
+            list-style: none; /* Cache la puce/flèche native */
+        }
+
+
+
+
